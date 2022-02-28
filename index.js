@@ -28,4 +28,4 @@ client.on("message", msg => {
     }
 })
 
-client.login(config.BOT_TOKEN);
+client.login(config.BOT_TOKEN.replace('!',''));
