@@ -28,4 +28,8 @@ client.on("message", msg => {
     }
 })
 
+client.on("guildMemberAdd", member => {
+    client.channels.get("947063449836458047").send(`Xin chào bạn ${member}! Hy vọng bạn sẽ vui khi gia nhập sân trường trên mây!`)
+});
+
 client.login(config.BOT_TOKEN.replace('!',''));
